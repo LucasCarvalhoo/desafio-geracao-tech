@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Geração Tech - Conteúdo</title>
+</head>
+
+<body>
+  <header class="bg-base-100 shadow-sm p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Geração Tech</h1>
+    <span class="text-sm text-gray-500">Bem-vindo(a) Beatriz 👋</span>
+  </header>
+
+  <section class="bg-base-200 p-4 flex flex-wrap gap-4 justify-start">
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-sm btn-outline">Tecnologia</div>
+      <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>HTML</a></li>
+        <li><a>CSS</a></li>
+        <li><a>JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-sm btn-outline">Turma</div>
+      <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Aldeota</a></li>
+        <li><a>Sul</a></li>
+        <li><a>Bezerra</a></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-sm btn-outline">Tipo</div>
+      <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Vídeo</a></li>
+        <li><a>PDF</a></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-sm btn-outline">Atividades</div>
+      <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Não iniciado</a></li>
+        <li><a>Concluído</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="p-4">
+
+    <input type="radio" name="tabs" id="tab-html" class="hidden" checked>
+    <input type="radio" name="tabs" id="tab-css" class="hidden">
+    <input type="radio" name="tabs" id="tab-js" class="hidden">
+
+    <div class="tabs flex space-x-6 border-b border-base-300 mb-6">
+      <label id="label-html" for="tab-html" class="cursor-pointer px-4 py-2 text-sm">HTML</label>
+      <label id="label-css" for="tab-css" class="cursor-pointer px-4 py-2 text-sm">CSS</label>
+      <label id="label-js" for="tab-js" class="cursor-pointer px-4 py-2 text-sm">JavaScript</label>
+    </div>
+
+    <div id="content-html" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card bg-base-100 shadow-md">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Introdução ao HTML</h2>
+          <p class="text-sm text-gray-500">Módulo 1 - Básico</p>
+          <div class="flex items-center justify-between mt-2">
+            <span class="badge badge-info">HTML</span>
+            <button class="btn btn-sm btn-primary">Acessar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-css" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card bg-base-100 shadow-md">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Estilizando com CSS</h2>
+          <p class="text-sm text-gray-500">Módulo 2 - Intermediário</p>
+          <div class="flex items-center justify-between mt-2">
+            <span class="badge badge-success">CSS</span>
+            <button class="btn btn-sm btn-primary">Acessar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="content-js" class="hidden grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card bg-base-100 shadow-md">
+        <div class="card-body">
+          <h2 class="card-title text-lg">Lógica com JavaScript</h2>
+          <p class="text-sm text-gray-500">Módulo 3 - Intermediário</p>
+          <div class="flex items-center justify-between mt-2">
+            <span class="badge badge-warning">JavaScript</span>
+            <button class="btn btn-sm btn-primary">Acessar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="bg-base-200 p-4 text-center text-sm text-gray-500 mt-6">
+    © 2025 Geração Tech. Todos os direitos reservados.
+  </footer>
+</body>
+
+</html>

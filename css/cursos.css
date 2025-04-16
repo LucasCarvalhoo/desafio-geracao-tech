@@ -1,0 +1,22 @@
+/* Mostrar conteúdo da aba selecionada */
+#tab-html:checked ~ #content-html,
+#tab-css:checked ~ #content-css,
+#tab-js:checked ~ #content-js {
+  display: grid;
+}
+
+#tab-html:checked ~ #content-css,
+#tab-html:checked ~ #content-js,
+#tab-css:checked ~ #content-html,
+#tab-css:checked ~ #content-js,
+#tab-js:checked ~ #content-html,
+#tab-js:checked ~ #content-css {
+  display: none;
+}
+
+/* Estilizar aba ativa */
+#tab-html:checked ~ .tabs #label-html,
+#tab-css:checked ~ .tabs #label-css,
+#tab-js:checked ~ .tabs #label-js {
+  @apply border-b-2 border-primary text-primary font-bold;
+}
